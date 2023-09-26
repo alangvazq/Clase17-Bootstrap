@@ -19,6 +19,18 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
+a{
+    color: var(--link-color);
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: var(--first-alpha-color);
+}
+
+
+
+
 /* Bootstrap styles */
 .navbar-brand img{
     height: 3rem;
