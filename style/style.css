@@ -1,0 +1,104 @@
+/* Custom properties: Variables */
+:root{
+    --first-color: rgb(217,0,98);
+    --first-alpha-color: rgba(217,0,98,0.75);
+    --second-color: rgb(20,25,45);
+    --second-alpha-color: rgba(20,25,45,0.75);
+    --third-color: rgb(80,20,100);
+    --third-alpha-color: rgba(80,20,100,0.75);
+
+    --link-color: rgb(80,158,227);
+    --link-alpha-color: rgba(80,158,227,0.75);
+
+    --bg-color: rgb(245,245,245);
+    --bg-alpha-color: rgba(245,245,245,0.75);
+}
+
+/* Reser styles */
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* Bootstrap styles */
+.navbar-brand img{
+    height: 3rem;
+    width: auto;
+}
+
+/* Se agrega como clase */
+.bg-color-nav{
+    background-color: var(--second-color);
+}
+
+.nav-link{
+    padding-left: 0.5rem;
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--bg-color);
+}
+
+.nav-item{
+    transition: all .3s ease-out;
+    border-radius: 2px;
+}
+
+.nav-item:hover{
+    background-color: var(--first-alpha-color);
+}
+
+
+
+/* se busca el elemento y se modifica */
+
+.navbar-toggler-icon:hover{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.dropdown-item{
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.dropdown-item:hover{
+    color: var(--third-alpha-color);
+}
+/* My styles */
+
+
+/* Breakpoints */
+/* sm*/
+@media (min-width: 576px){
+    
+}
+/* md */
+@media (min-width: 768px){
+
+}
+/* lg */
+@media (min-width: 992px){
+    .nav-item:hover{
+        background-color: transparent;
+}
+}
+
+    .nav-link:hover{
+        color: var(--bg-color);
+    }
+    
+/* xl */
+@media (min-width: 1200px){
+    
+}
+/* xxl */
+@media (min-width: 1400px){
+    
+}
