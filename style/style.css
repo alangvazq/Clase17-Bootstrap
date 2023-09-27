@@ -14,7 +14,7 @@
     --bg-alpha-color: rgba(245,245,245,0.75);
 }
 
-/* Reser styles */
+/* Reset styles */
 body{
     font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -85,6 +85,23 @@ a:hover{
 }
 /* My styles */
 
+.bg-gradient-blue{
+    background-color: rgba(83, 184, 152, 1);
+    background-image: linear-gradient(
+        135deg,
+        rgba(47,145,224,0.91),
+        rgba(7,31,51,0.97) 79% );
+}
+
+.bg-third-color{
+    background-color: var(--third-color);
+}
+
+.text-third{
+    color: var(--third-color);
+    font-weight: bold;
+    text-decoration: none;
+}
 
 /* Breakpoints */
 /* sm*/
