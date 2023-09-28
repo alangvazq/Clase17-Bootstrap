@@ -141,6 +141,11 @@ a:hover{
     background-color: var(--second-alpha-color);
 }
 
+.bg-first-color{
+    color: var(--first-color);
+    font-weight: bold;
+}
+
 /* Breakpoints */
 /* sm*/
 @media (min-width: 576px){
