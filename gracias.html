@@ -19,7 +19,7 @@
     <link rel="icon" href="img/favicon.png">
 </head>
 
-<body>
+<body min>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-color-nav sticky-top">
         <div class="container">
@@ -62,74 +62,10 @@
         </div>
     </nav>
 
-    <main class="bg-color">
-        <div class="container">
-            <section class="row">
-                <article class="col-12 text-center">
-                    <h1>¿Interesado?</h1>
-                    <p>¡Envíame tus comentarios!</p>
-                    <p>Para más información, puedes contactarme en <a
-                            href="mailto:info@studiobaddog.com">info@studiobaddog.com</a></p>
-                </article>
-                <!-- form-label y form-control -->
-                <article class="col-12 col-lg-6 order-lg-1">
-                    <form action="https://formsubmit.co/alan.g.vazq@gmail.com" method="POST">
-                    <div class="mb-2"><label class="form-label" for="name">Nombre:</label>
-                    <input class="form-control" id="name" name="name" type="text" placeholder="Tú nombre" required></div>
-                    <div class="mb-2"><label class="form-label" for="email">Email:</label>
-                    <input class="form-control" id="email" name="email" type="email" placeholder="Tú email" required></div>
-                    <div class="mb-4"><label class="form-label" for="comments">Comentarios:</label>
-                    <input class="form-control" id="comments" name="comments" placeholder="Déjanos tus comentarios" required></div>
-                    <div class="mb-4">
-                        <button class="btn btn-lg btn-success" type="submit">Enviar</button>
-                        <input type="hidden" name="_subject" value="New submission!">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
-                    </div>
-                </form>
-                </article>
-                <!-- mapa aspect ratio -->
-                <article class="col-12 col-lg-6 mb-5">
-                    <div class="ratio ratio-16x9">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60197.51715622367!2d-99.22919452064902!3d19.440694401302856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021a6e3a3d09%3A0x9372e2224c033cb3!2sMuseo%20Soumaya!5e0!3m2!1ses!2smx!4v1695880129890!5m2!1ses!2smx"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </article>
-            </section>
-        </div>
-
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-caption d-none d-md-block z-1 bg-second-alpha-color">
-                    <h5 class="fs-4"><b>alangvazq</b></h5>
-                    <h5 class="fs-5">Desarrollador Web.</h5>
-                    <p>Trabajo de forma remota e independiente.</p>
-                </div>
-                <div class="carousel-item active">
-                    <img src="img/about-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/about-2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/about-3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/about-4.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+    <main class="bg-color min-vh-100 text-center d-flex justify-content-center align-items-center">
+            <article>
+                <h1 class="display-1">Gracias</h1>
+            </article>
     </main>
 
     <footer class="bg-color-nav p-3">

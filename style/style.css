@@ -1,30 +1,30 @@
 /* Custom properties: Variables */
-:root{
-    --first-color: rgb(217,0,98);
-    --first-alpha-color: rgba(217,0,98,0.75);
-    --second-color: rgb(20,25,45);
-    --second-alpha-color: rgba(20,25,45,0.75);
-    --third-color: rgb(80,20,100);
-    --third-alpha-color: rgba(80,20,100,0.75);
+:root {
+    --first-color: rgb(217, 0, 98);
+    --first-alpha-color: rgba(217, 0, 98, 0.75);
+    --second-color: rgb(20, 25, 45);
+    --second-alpha-color: rgba(20, 25, 45, 0.75);
+    --third-color: rgb(80, 20, 100);
+    --third-alpha-color: rgba(80, 20, 100, 0.75);
 
-    --link-color: rgb(80,158,227);
-    --link-alpha-color: rgba(80,158,227,0.75);
+    --link-color: rgb(80, 158, 227);
+    --link-alpha-color: rgba(80, 158, 227, 0.75);
 
-    --bg-color: rgb(245,245,245);
-    --bg-alpha-color: rgba(245,245,245,0.75);
+    --bg-color: rgb(245, 245, 245);
+    --bg-alpha-color: rgba(245, 245, 245, 0.75);
 }
 
 /* Reset styles */
-body{
+body {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
-a{
+a {
     color: var(--link-color);
     transition: all .3s ease-out;
 }
 
-a:hover{
+a:hover {
     color: var(--first-alpha-color);
 }
 
@@ -32,33 +32,33 @@ a:hover{
 
 
 /* Bootstrap styles */
-.navbar-brand img{
+.navbar-brand img {
     height: 3rem;
     width: auto;
 }
 
 /* Se agrega como clase */
-.bg-color-nav{
+.bg-color-nav {
     background-color: var(--second-color);
 }
 
-.nav-link{
+.nav-link {
     padding-left: 0.5rem;
     color: var(--first-color);
     font-size: 1.15rem;
     font-weight: bold;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--bg-color);
 }
 
-.nav-item{
+.nav-item {
     transition: all .3s ease-out;
     border-radius: 2px;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background-color: var(--first-alpha-color);
 }
 
@@ -66,111 +66,105 @@ a:hover{
 
 /* se busca el elemento y se modifica */
 
-.navbar-toggler-icon:hover{
+.navbar-toggler-icon:hover {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     transition: all .3s ease-out;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: var(--first-color);
     font-weight: bold;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     color: var(--third-alpha-color);
 }
 
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-  }
-  
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  }
+}
 
-  .carousel-indicators [data-bs-target]{
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-indicators [data-bs-target] {
     background-color: var(--first-color);
-  }
+}
 
 /* My styles */
 
-.bg-gradient-blue{
+.bg-gradient-blue {
     background-color: rgba(83, 184, 152, 1);
-    background-image: linear-gradient(
-        135deg,
-        rgba(47,145,224,0.91),
-        rgba(7,31,51,0.97) 79% );
+    background-image: linear-gradient(135deg,
+            rgba(47, 145, 224, 0.91),
+            rgba(7, 31, 51, 0.97) 79%);
 }
 
-.bg-color{
+.bg-color {
     background-color: var(--bg-color);
 }
 
-.bg-third-color{
+.bg-third-color {
     background-color: var(--third-color);
 }
 
-.text-third{
+.text-third {
     color: var(--third-color);
     font-weight: bold;
     text-decoration: none;
 }
 
-.bg-hero-img{
+.bg-hero-img {
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.bg-alpha-color{
+.bg-alpha-color {
     background-color: var(--bg-alpha-color);
 }
 
-.cotizacion{
+.cotizacion {
     text-decoration: none;
     font-weight: bold;
     color: var(--first-color);
 }
 
-.bg-second-alpha-color{
+.bg-second-alpha-color {
     background-color: var(--second-alpha-color);
 }
 
-.bg-first-color{
+.bg-first-color {
     color: var(--first-color);
     font-weight: bold;
 }
 
 /* Breakpoints */
 /* sm*/
-@media (min-width: 576px){
-    
-}
+@media (min-width: 576px) {}
+
 /* md */
-@media (min-width: 768px){
+@media (min-width: 768px) {}
 
-}
 /* lg */
-@media (min-width: 992px){
-    .nav-item:hover{
+@media (min-width: 992px) {
+    .nav-item:hover {
         background-color: transparent;
-}
+    }
 }
 
-    .nav-link:hover{
-        color: var(--bg-color);
-    }
-    
+.nav-link:hover {
+    color: var(--bg-color);
+}
+
 /* xl */
-@media (min-width: 1200px){
-    
-}
+@media (min-width: 1200px) {}
+
 /* xxl */
-@media (min-width: 1400px){
-    
-}
+@media (min-width: 1400px) {}
